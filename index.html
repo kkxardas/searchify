@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./images/favicon.png">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="./jquery-ui.css">
+  <link rel="stylesheet" href="./style.css">
+  
+  <title id="web-title">Movie Search</title>
+</head>
+
+<body>
+
+  <!-- 600 STROKES OF CODE AT ALL -->
+
+  <div class="container" id="container">
+    <h1 class="title">Search a movie <i class='bx bx-film'></i></h1>
+    <div class="search">
+      <input type="text" id="movie-name" class="input" placeholder="Enter movie">
+      <label for="movie-name" class="searchBtn" id="searchBtn"><i class='bx bx-search-alt'></i></label>
+    </div>
+
+    <div class="result" id="res">
+      <div class="card404" id="not-found">
+        <img src="" width="300px" id="image404">
+
+      </div>
+    </div>
+    <div id="pages">
+
+    </div>
+  </div>
+
+  <div id="myModal">
+    <div class="loading" style="display: none;" id="loading"></div>
+    <span id="closeButton"><i class='bx bx-x'></i></span>
+    <div class="modalContainer" id="modalContainer" style="display: none;">
+      <div class="poster">
+        <img id="modalPoster" src="" alt="Poster">
+        <div id="imageBg"><i class='bx bx-play-circle'></i></div>
+      </div>
+      <div id="modalRating"></div>
+      <div id="modalMetacritic"></div>
+      <div id="modalLink"></div>
+      <div id="modalInfo">
+        <span>Title:&nbsp<div id="modalTitle"></div></span>
+        <span>Released:&nbsp<div id="modalYear"></div></span>
+        <span>Length:&nbsp<div id="modalLength"></div></span>
+        <span>Genre:&nbsp<div id="modalGenre"></div></span>
+        <span>Director:&nbsp<div id="modalDirector"></div></span>
+        <span>Plot:&nbsp<div id="modalPlot"></div></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg" id="bg"></div>
+
+  <div class="footer">
+    <span><a href="https://www.instagram.com/pasha_halimurka/" target="_blank"><i class='bx bxl-instagram'></i></a></span>
+    <span><a href="https://www.t.me/kxardas" target="_blank"><i class='bx bxl-telegram'></i></a></span>
+    <span><a href="https://github.com/kxardas" target="_blank"><i class='bx bxl-github'></i></a></span>
+  </div>
+  <script src="./jquery-3.7.1.min.js"></script>
+  <script src="./jquery-ui.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
